@@ -8,10 +8,10 @@ box-sizing: border-box;
 nav{
     height: 100px;
     background-color: #1b1b1b;
-    display: inline-block;
+    display:flex;
     align-items: center;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
     padding: 10px 50px;
 }
 
@@ -32,8 +32,9 @@ nav ul{
     
 }
 nav ul li{
-    display: inline-block;
+    display:inline-block;
     margin: 10px;
+    
 }
 nav ul li a{
     text-decoration: none;
