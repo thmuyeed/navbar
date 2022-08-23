@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+
+}
+
+nav{
+    height: 100px;
+    background-color: #1b1b1b;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+nav .logo{
+    color: white;
+font-size: 60px;
+margin-left: 20px;
+}
+nav .menu-btn i{display: none;
+font-size: 20px;
+cursor: pointer;
+}
+#click{display: none;}
+nav ul{
+    list-style: none;
+    
+    
+    
+}
+nAV UL li{
+    display: inline-block;
+    margin: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover{
+  color: #1b1b1b;
+  background: white;
+  padding: 10px 20px;border-radius: 20px;
+}
+nav ul li a:active{
+    background: green;
+}
+
+
+@media (max-width:940px) {
+ 
+  nav ul{
+    position: fixed;
+    top: 100px;
+    left: -100%;
+    background: #111;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0%;
+  }
+  #click:checked ~.menu-btn i::before{content: "\f00d";}
+  nav ul li {
+    display: block;
+    margin: 50px;
+  
+  }  
+  nav ul li a{
+    font-size: 35px;
+  }
+  nav .menu-btn i{display:block;
+    font-size: 30px;
+  cursor: pointer;
+  }
+    nav ul li a:hover{
+      color: #1b1b1b;
+      background: cyan;
+      padding: 10px 20px;border-radius: 20px;
+    }
+}
